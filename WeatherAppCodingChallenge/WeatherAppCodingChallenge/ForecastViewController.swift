@@ -99,8 +99,8 @@ class ForecastViewController: UIViewController, UICollectionViewDelegate, UIColl
         let forecast = forecasts[indexPath.row]
         
         cell.forecastDateLabel.text = forecast.date
-        cell.forecastLowTempLabel.text = "LOW: \(forecast.minTempF)"
-        cell.forecastHighTempLabel.text = "HIGH: \(forecast.maxTempF)"
+        cell.forecastLowTempLabel.text = "LOW: \(forecast.minTempF)\u{00B0}F"
+        cell.forecastHighTempLabel.text = "HIGH: \(forecast.maxTempF)\u{00B0}F"
         
         return cell
     }
