@@ -45,7 +45,7 @@ class Forecast {
             let calendar = Calendar.current
             let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
             let finalDate = calendar.date(from:components)
-            dateFormatter.dateFormat = "MM/dd"
+            dateFormatter.dateFormat = "E M/dd"
             let formattedDateString = dateFormatter.string(from: finalDate!)
             
             self.date = formattedDateString
