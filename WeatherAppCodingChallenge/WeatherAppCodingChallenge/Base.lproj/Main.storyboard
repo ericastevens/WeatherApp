@@ -48,9 +48,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-sc-SgF">
-                                                    <rect key="frame" x="20" y="20" width="110" height="51"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-sc-SgF">
+                                                    <rect key="frame" x="46.5" y="42" width="57" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -70,13 +69,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2r-2l-qFl">
+                                                    <rect key="frame" x="35" y="82" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="0eJ-i8-7F8"/>
+                                                        <constraint firstAttribute="height" constant="80" id="D0C-5E-RQB"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="h2r-2l-qFl" firstAttribute="centerX" secondItem="aAy-dC-rjD" secondAttribute="centerX" id="1dF-Yv-Mj3"/>
+                                            <constraint firstItem="lIh-sc-SgF" firstAttribute="centerX" secondItem="aAy-dC-rjD" secondAttribute="centerX" id="BMA-t1-RJq"/>
                                             <constraint firstItem="XXK-Wk-bGP" firstAttribute="leading" secondItem="aAy-dC-rjD" secondAttribute="leadingMargin" constant="12" id="EUL-Fe-Tsw"/>
                                             <constraint firstItem="I7U-V5-OoW" firstAttribute="leading" secondItem="aAy-dC-rjD" secondAttribute="leadingMargin" constant="12" id="Fjn-bl-bZQ"/>
                                             <constraint firstItem="XXK-Wk-bGP" firstAttribute="top" secondItem="I7U-V5-OoW" secondAttribute="bottom" constant="25" id="G6R-MC-bZa"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="XXK-Wk-bGP" secondAttribute="trailing" constant="12" id="N5R-Al-5cV"/>
+                                            <constraint firstItem="h2r-2l-qFl" firstAttribute="top" secondItem="lIh-sc-SgF" secondAttribute="bottom" constant="11" id="WdO-OU-LGS"/>
+                                            <constraint firstItem="I7U-V5-OoW" firstAttribute="top" secondItem="h2r-2l-qFl" secondAttribute="bottom" constant="24" id="kpy-GI-gfv"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="I7U-V5-OoW" secondAttribute="trailing" constant="12" id="v45-xN-NTk"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="XXK-Wk-bGP" secondAttribute="bottom" constant="39" id="w55-19-0gr"/>
                                         </constraints>
@@ -84,11 +94,20 @@
                                         <connections>
                                             <outlet property="forecastDateLabel" destination="lIh-sc-SgF" id="H6q-ac-rJ3"/>
                                             <outlet property="forecastHighTempLabel" destination="XXK-Wk-bGP" id="xK7-0d-YOh"/>
+                                            <outlet property="forecastIconImageView" destination="h2r-2l-qFl" id="6Y8-bp-jb7"/>
                                             <outlet property="forecastLowTempLabel" destination="I7U-V5-OoW" id="Dop-MM-l0n"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0XT-dC-2CB">
+                                <rect key="frame" x="109" y="501" width="157" height="29"/>
+                                <segments>
+                                    <segment title="Fahrenheit"/>
+                                    <segment title="Celsius"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -97,12 +116,15 @@
                             <constraint firstItem="jTZ-xq-mqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="alg-tc-buA"/>
                             <constraint firstAttribute="trailing" secondItem="jTZ-xq-mqu" secondAttribute="trailing" id="crJ-tn-u5h"/>
                             <constraint firstItem="b8N-vD-EXo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jwN-dx-RPO"/>
+                            <constraint firstItem="0XT-dC-2CB" firstAttribute="top" secondItem="jTZ-xq-mqu" secondAttribute="bottom" constant="18" id="pgN-vf-aOi"/>
                             <constraint firstItem="jTZ-xq-mqu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJF-Ev-VgU"/>
+                            <constraint firstItem="0XT-dC-2CB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zqz-Az-gKP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="forecastCollectionView" destination="jTZ-xq-mqu" id="JDz-sM-E7w"/>
                         <outlet property="locationDescriptionLabel" destination="b8N-vD-EXo" id="waf-iK-IFD"/>
+                        <outlet property="toggleFahrenheitCelsiusSegmentedControl" destination="0XT-dC-2CB" id="kaE-nj-h9D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

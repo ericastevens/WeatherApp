@@ -15,6 +15,7 @@
 		3A337E511F33AD930025753A /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A337E501F33AD930025753A /* ForecastViewController.swift */; };
 		3A337E571F33B3B70025753A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A337E561F33B3B70025753A /* Forecast.swift */; };
 		3A337E591F33C5430025753A /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A337E581F33C5430025753A /* ForecastCollectionViewCell.swift */; };
+		3A34E41B1F33E3CD00434419 /* ForecastIconDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34E41A1F33E3CD00434419 /* ForecastIconDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3A337E501F33AD930025753A /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		3A337E561F33B3B70025753A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		3A337E581F33C5430025753A /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A34E41A1F33E3CD00434419 /* ForecastIconDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastIconDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3A337E561F33B3B70025753A /* Forecast.swift */,
+				3A34E41A1F33E3CD00434419 /* ForecastIconDescription.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A34E41B1F33E3CD00434419 /* ForecastIconDescription.swift in Sources */,
 				3A337E571F33B3B70025753A /* Forecast.swift in Sources */,
 				3A337E4E1F33ACBA0025753A /* APIRequestManager.swift in Sources */,
 				3A337E3C1F33AC920025753A /* AppDelegate.swift in Sources */,
@@ -353,6 +357,7 @@
 				3A337E4C1F33AC920025753A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

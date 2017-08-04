@@ -11,21 +11,32 @@ import Foundation
 class Forecast {
     var minTempF: Int
     var maxTempF: Int
+    var minTempC: Int
+    var maxTempC: Int
     var date: String
+    var iconPath: String
     
-    init(minTempF: Int, maxTempF: Int, date: String) {
+    init(minTempF: Int, maxTempF: Int, date: String, iconPath: String, minTempC: Int, maxTempC: Int) {
         self.minTempF = minTempF
         self.maxTempF = maxTempF
+        self.minTempC = minTempC
+        self.maxTempC = maxTempC
         self.date = date
+        self.iconPath = iconPath
     }
     
     init?(with dict: [String:Any]) {
-        if let minTemp = dict["minTempF"] as? Int,
-            let maxTemp = dict["maxTempF"] as? Int,
-            let timestamp = dict["dateTimeISO"] as? String {
+        if let minTempF = dict["minTempF"] as? Int,
+            let maxTempF = dict["maxTempF"] as? Int,
+            let minTempC = dict["minTempC"] as? Int,
+            let maxTempC = dict["maxTempC"] as? Int,
+            let timestamp = dict["dateTimeISO"] as? String,
+            let iconPath = dict["icon"] as? String {
             
-            self.minTempF = minTemp
-            self.maxTempF = maxTemp
+            self.minTempF = minTempF
+            self.maxTempF = maxTempF
+            self.minTempC = minTempC
+            self.maxTempC = maxTempC
             
             let dateFormatter = DateFormatter()
             dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -38,6 +49,7 @@ class Forecast {
             let formattedDateString = dateFormatter.string(from: finalDate!)
             
             self.date = formattedDateString
+            self.iconPath = iconPath
             
         } else {
             return nil

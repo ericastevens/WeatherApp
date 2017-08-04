@@ -1,0 +1,132 @@
+//
+//  ForecastIconDescription.swift
+//  WeatherAppCodingChallenge
+//
+//  Created by Erica Y Stevens on 8/3/17.
+//  Copyright © 2017 Erica Y Stevens. All rights reserved.
+//
+
+import Foundation
+
+enum ForecastIconDescription: String {
+    case am_pcloudy
+    case am_pcloudyr
+    case am_showers
+    case am_showshowers
+    case am_tstorm
+    case blizzard
+    case blizzardn
+    case blowingsnow
+    case blowingsnown
+    case chancetstorm
+    case chancetstormn
+    case clear
+    case clearn
+    case clearw
+    case clearwn
+    case cloudy
+    case cloudyn
+    case cloudyw
+    case cloudywn
+    case drizzle
+    case drizzlef
+    case drizzlen
+    case dust
+    case fair
+    case fairn
+    case fairw
+    case fairwn
+    case fdrizzle
+    case fdrizzlen
+    case flurries
+    case flurriesn
+    case flurriesw
+    case flurrieswn
+    case fog
+    case fogn
+    case freezingrain
+    case freezingrainn
+    case hazy
+    case hazyn
+    case mcloudy
+    case mcloudyn
+    case mcloudyr
+    case mcloudyrn
+    case mcloudyrw
+    case mcloudyrwn
+    case mcloudys
+    case mcloudysfn
+    case mcloudysfw
+    case mcloudysfwn
+    case mcloudysn
+    case mcloudysw
+    case mcloudyswn
+    case mcloudyt
+    case mcloudytn
+    case mcloudytw
+    case mcloudytwn
+    case mcloudyw
+    case mcloudywn
+    case na
+    case pcloudy
+    case pcloudyn
+    case pcloudyr
+    case pcloudyrn
+    case pcloudyrw
+    case pcloudyrwn
+    case pcloudys
+    case pcloudysfn
+    case pcloudysfw
+    case pcloudysfwn
+    case pcloudysn
+    case pcloudysw
+    case pcloudyswn
+    case pcloudyt
+    case pcloudytn
+    case pcloudytw
+    case pcloudytwn
+    case pcloudyw
+    case pcloudywn
+    case pm_pcloudy
+    case pm_pcloudyr
+    case pm_showers
+    case pm_snowshowers
+    case pm_tstorm
+    case rain
+    case rainandsnow
+    case rainandsnown
+    case rainn
+    case raintosnow
+    case raintosnown
+    case rainw
+    case showers
+    case showersn
+    case showersw
+    case sleet
+    case sleetn
+    case sleetnsnow
+    case smoke
+    case snow
+    case snown
+    case snowshowers
+    case snowshowersn
+    case snowshowersw
+    case snowshowerswn
+    case snowtorain
+    case snowtorainn
+    case snoww
+    case snowwn
+    case sunny
+    case sunnyn
+    case sunnyw
+    case sunnywn
+    case tstorm
+    case tstormn
+    case tstormsw
+    case tstormswn
+    case tstormw
+    case tstormwn
+    case wind
+    case wintrymin
+    case wintryminxn
+}
