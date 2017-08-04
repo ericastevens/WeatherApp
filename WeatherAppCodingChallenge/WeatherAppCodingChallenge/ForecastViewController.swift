@@ -99,6 +99,7 @@ class ForecastViewController: UIViewController, UICollectionViewDelegate, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: forecastCollectionCellReuseIdentifier, for: indexPath) as! ForecastCollectionViewCell
         
         let forecast = forecasts[indexPath.row]
+        
         switch indexPath.row {
         case 0:
             cell.forecastDateLabel.text = "Today"
@@ -125,6 +126,7 @@ class ForecastViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         
         cell.forecastIconImageView.image = getImageFor(iconFilename: forecast.iconPath)
+        cell.forecastDescriptionLabel.text = forecast.description
         
         return cell
     }

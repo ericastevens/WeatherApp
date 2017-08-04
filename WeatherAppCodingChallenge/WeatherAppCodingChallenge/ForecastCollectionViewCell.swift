@@ -14,6 +14,7 @@ class ForecastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var forecastLowTempLabel: UILabel!
     @IBOutlet weak var forecastHighTempLabel: UILabel!
     @IBOutlet weak var forecastIconImageView: UIImageView!
+    @IBOutlet weak var forecastDescriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

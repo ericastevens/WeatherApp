@@ -15,14 +15,16 @@ class Forecast {
     var maxTempC: Int
     var date: String
     var iconPath: String
+    var description: String
     
-    init(minTempF: Int, maxTempF: Int, date: String, iconPath: String, minTempC: Int, maxTempC: Int) {
+    init(minTempF: Int, maxTempF: Int, date: String, iconPath: String, minTempC: Int, maxTempC: Int, description: String) {
         self.minTempF = minTempF
         self.maxTempF = maxTempF
         self.minTempC = minTempC
         self.maxTempC = maxTempC
         self.date = date
         self.iconPath = iconPath
+        self.description = description
     }
     
     init?(with dict: [String:Any]) {
@@ -31,7 +33,8 @@ class Forecast {
             let minTempC = dict["minTempC"] as? Int,
             let maxTempC = dict["maxTempC"] as? Int,
             let timestamp = dict["dateTimeISO"] as? String,
-            let iconPath = dict["icon"] as? String {
+            let iconPath = dict["icon"] as? String,
+            let description = dict["weather"] as? String {
             
             self.minTempF = minTempF
             self.maxTempF = maxTempF
@@ -50,6 +53,7 @@ class Forecast {
             
             self.date = formattedDateString
             self.iconPath = iconPath
+            self.description = description
             
         } else {
             return nil
